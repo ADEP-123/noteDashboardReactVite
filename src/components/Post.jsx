@@ -1,12 +1,10 @@
-const names = ["Maximilian", "Manuel", "Andres", "Camilo"];
-
-export default function Post() {
-  const chosenName =
-    names[Math.floor(Math.random() * (names.length - 1 - 0 + 1)) + 0];
+export default function Post(props) {
+  props.author;
+  props.body;
   return (
     <div>
-      <p>{chosenName}</p>
-      <p>text example</p>
+      <p>{props.author}</p>
+      <p>{props.body}</p>
     </div>
   );
 }
