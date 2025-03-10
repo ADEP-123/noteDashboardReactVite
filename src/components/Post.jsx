@@ -1,10 +1,12 @@
+import styles from "./Post.module.css"
+
 export default function Post(props) {
   props.author;
-  props.body;
+  props.text;
   return (
-    <div>
-      <p>{props.author}</p>
-      <p>{props.body}</p>
+    <div className={styles.post}>
+      <p className={styles.author}>{props.author}</p>
+      <p className={styles.text}>{props.text}</p>
     </div>
   );
 }
