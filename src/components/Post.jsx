@@ -4,9 +4,9 @@ export default function Post(props) {
   props.author;
   props.text;
   return (
-    <div className={styles.post}>
+    <li className={styles.post}>
       <p className={styles.author}>{props.author}</p>
       <p className={styles.text}>{props.text}</p>
-    </div>
+    </li>
   );
 }
